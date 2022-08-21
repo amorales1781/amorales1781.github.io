@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
+		<title>Morales' Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -65,29 +65,66 @@
 
 						<!-- Projects -->
 							<article id="projects">
-								<h2 class="major">Robotic Projects</h2>
+								<h1 class="major">Robotic Projects</h1>
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
+								<p><a href="https://docs.google.com/document/d/1ZVKIGwsBXTRzKGox3xK6WBG5wpA9z4WVFvrKsC_n9AI/edit?usp=sharing" target="_blank"> For more details on these projects, click here!</a></p>
 								
-								<h3>Self Leveling Elevator</h3>
-								<p>A self leveling elevator made to climb on to platforms.</p>
+							<!--Self Leveling Elevator-->
+								<h2>Self Leveling Elevator</h2>
+								<p>This was my first major programming project for a robotics competition. We competed in the First Robotics Competition, a internation high school
+								competition where 2 alliances of 3 robots completed specific tasks to score points to beat the opposing alliance. The game that year was called
+								Destination: Deep Space. You can view the trailer <a href="https://youtu.be/Mew6G_og-PI" target="_blank"> here</a> for more details on the game and their tasks. 
+								</p>
+								<span class="image main"><img src="images/DeepSpacePlatform.PNG" alt="" /></span>
+								<p>  Above you can see the dimensions of the platforms the robot needed to climb. The problem was that the "legs" we used to climb wouldn't elevate
+								at the same speed which could cause the robot to tip over. Below you can see a video of the initial climb test.  
+								</p>
+								<iframe class="image main" height="315" src="https://www.youtube.com/embed/EfdXeVlq_Rs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<p> The climb was too slow and awkward too control. To improve the elevator, I used a navX sensor that could detect the angle that the robot is at.
+									I set a threshold that the robot can tilt at, if it went outside that boundary the corresponding leg would be slowed down to make sure the robot
+									stays level. For example, if the sensor read -8 degrees that means it was leaning to far back and the front leg needed to be slowed down and vice versa.
+									A video of the robot climbing during competition is shown below.
+								</p>
+								<iframe class="image main" width="560" height="315" src="https://www.youtube.com/embed/KEeardrG1SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<p>This system worked great in competition, helping us to win our very first ever regional. We tied 2nd for most points scored from climbing 
+								with 198 points (1st place - 201 points) out of 40 teams. 
+								</p>
+								<span class="image main"><img src="images/CentralILWinner.PNG" alt="" /></span>
 
-								<h3>Computer Vision Tracking</h3>
+							<!--Autonomous Routine-->
+								<h2>Autonomous Routine</h2>
+								<p>In the next season, the game was called Infinite Recharge. In this game you had to collect yellow balls called powercells and shoot them at a target called
+								a port. The trailer can be viewed <a href="https://youtu.be/gmiYWTmFRVE" target="_blank"> here</a>.
+								</p>
+								<p> During the first 15 seconds of the game the robot is autonomous. We had two different routines for the robot depending on its starting position.
+								 The purple route was for when we couldn't start at our ideal location but this routine can be done almost anywhere on the initiation line. In this routine
+								 the robot would just shoot at the target and then moved forward off the line. The green route was for when the robot started in our ideal position. 
+								 Here the robot would lock on to the port and rev up our turret to shoot the powercells. Then it would drive forward and collect 3 more powercells. 
+								</p>
+								<span class="image main"><img src="images/InfRechargeMap.PNG" alt="" /></span>
+								<p> In the competition, you earned 5 points for driving off the line. With these routines we would usually score 14-17 points out of a possible
+								 23 points. When we did the green routine we had the added advantage of having 3 additional powercells ready to shoot when the teleop period of the game 
+								 started. Here is a video showcasing the robot do the routines during competition.
+								</p> 
+								<iframe class="image main" width="560" height="315" src="https://www.youtube.com/embed/K0kmHy8sdB4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<p> These routines were really consistent during matches. We ranked 3rd highest in points earned during autonomous out of 54 teams with a total of 376 
+								 points (1st place - 399 points).
+								</p>
+
+								<h2>Computer Vision Tracking</h2>
 								<p>A python computer vision sytem made to track yellow balls for autonomous collection.</p>
 
-								<h3>Autonomous Routine</h3>
-								<p>An autonomous routine that allows the robot to shoot 3 balls at a target then collect 3 more balls.</p>
-
-								<h3>Flexible Finite State Machine</h3>
+								<h2>Flexible Finite State Machine</h2>
 								<p>A flexible state machine that allowed us to create various autonomous paths and routines for the robot to execute.</p>
 							</article>
 						<!--Gaming Projects-->
 							<article id="projects">
-								<h2 class="major">Gaming Projects</h2>
+								<h1 class="major">Gaming Projects</h1>
 								<!--<span class="image main"><img src="images/pic03.jpg" alt="" /></span>-->
 								<p><a href="https://docs.google.com/document/d/1WiwtvPkIg_Ev-sD0oMjcw1XDlQT1RDhQHiYzGu77-e0/edit?usp=sharing" target="_blank"> For more details on these projects, click here!</a></p>
 							
 							<!--Dont't Stop Moving-->
-								<h3>Don't Stop Moving</h3>
+								<h2>Don't Stop Moving</h2>
 								<p>Don't Stop Moving is the very first game I ever programmed. The premise of the game was that you are a test subject in an experimental facility.
 									You have to escape the facility by collecting the fragments of a key while avoiding the facility's security measures. If you stop moving you die.
 								</p>
@@ -102,7 +139,7 @@
 								</p>
 						
 							<!--ZPG-->
-								<h3>ZPG</h3>
+								<h2>ZPG</h2>
 								<p>“Earth in the future has a competition to keep the population under control, 2 people compete against each other through several tests, 
 									the competitor with the most victories, survives.”
 								</p>
@@ -118,7 +155,7 @@
 								</p>
 
 							<!--Asteroids-->
-								<h3>Asteroids</h3>
+								<h2>Asteroids</h2>
 								<p>This is my recreation of the 1979 classic arcade game of the same name.</p>
 								<video class = "image main" controls>
 									<source src="videos/AsteroidsGameplay.mov" type="video/mp4">
@@ -136,7 +173,7 @@
 								</p>
 
 							<!--AVALANCHE!-->
-								<h3>AVALANCHE!</h3>
+								<h2>AVALANCHE!</h2>
 								<p>AVALANCHE! In this game you have to steer a tumbling snowball out of harm's way to the bottom of the mountain.</p>
 								<video class = "image main" controls>
 									<source src="videos/AvalancheGampleyCrop.mov" type="video/mp4">
